@@ -12,6 +12,7 @@ The UI will have 2 main parts:
 ## Jokes assignment
 1. Display a joke and 2 buttons to vote and down-vote for the joke
 2. I used BLoC to manage the state of the app
+3. I used shared_preferences to store the list of voted jokes
 
 # Product's images:
    - ![alt text](assets/product_images/with_a_joke.png)
