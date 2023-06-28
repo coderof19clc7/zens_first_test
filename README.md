@@ -6,5 +6,5 @@ The UI will have 2 main parts:
 2. Display a joke and 2 buttons to vote and down-vote for the joke
 3. I used BLoC to manage the state of the app
 4. Product's images:
-    - ![alt text](\assets\product_images\with_a_joke.png)
-    - ![alt text](\assets\product_images\with_no_joke.png)
+    - ![alt text](assets/product_images/with_a_joke.png)
+    - ![alt text](assets/product_images/with_no_joke.png)
