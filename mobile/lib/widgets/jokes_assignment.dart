@@ -30,7 +30,7 @@ class JokesAssignment extends StatelessWidget {
                 || previous.currentListJokes != current.currentListJokes;
           },
           builder: (contextCubit, state) {
-            contextCubit.read<MainCubit>().solveAlgorithmAssignment();
+            // contextCubit.read<MainCubit>().solveAlgorithmAssignment();
             if (state.isLoading) {
               return const Center(
                 child: CircularProgressIndicator(),

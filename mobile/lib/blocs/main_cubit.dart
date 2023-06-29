@@ -29,22 +29,38 @@ class MainCubit extends Cubit<MainState> {
   final random = Random();
   late final SharedPreferences? prefs;
 
-  void solveAlgorithmAssignment() {
-    final listInts = <int>[];
-    for (var i = 0; i < 5; i++) {
-      listInts.add(random.nextInt(1000));
-    }
-    final listCopy = List.from(listInts);
-    listCopy.sort();
-    final sumMin = listCopy.sublist(0, listCopy.length - 1).reduce((a, b) => a + b);
-    final sumMax = listCopy.sublist(1, listCopy.length).reduce((a, b) => a + b);
-
-    emit(state.copyWith(
-      listIntegers: List.from(listInts),
-      sumMin: sumMin,
-      sumMax: sumMax,
-    ));
-  }
+  // void solveAlgorithmAssignment() {
+  //   final listInts = <int>[];
+  //   for (var i = 0; i < 5; i++) {
+  //     listInts.add(random.nextInt(1000));
+  //   }
+  //
+  //   // check input
+  //   print('5 integers: $listInts');
+  //
+  //   // solving problem
+  //   int min = listInts[0];
+  //   int max = listInts[0];
+  //   int sum = 0;
+  //   final evens = <int>[], odds = <int>[];
+  //   for (int i = 0; i < listInts.length; i++) {
+  //     if (listInts[i] < min) min = listInts[i];
+  //     if (listInts[i] > max) max = listInts[i];
+  //     sum += listInts[i];
+  //     if (listInts[i] == 0 || listInts[i] % 2 == 0) {
+  //       evens.add(listInts[i]);
+  //     } else {
+  //       odds.add(listInts[i]);
+  //     }
+  //   }
+  //
+  //   // check output
+  //   print('${sum - max} ${sum - min}');
+  //
+  //   // bonus part
+  //   print('sum: $sum, min: $min, max: $max');
+  //   print('evens: $evens, odds: $odds\n');
+  // }
 
   Future<void> onVoteJoke(String joke) async {
     emit(state.copyWith(isLoading: true));
