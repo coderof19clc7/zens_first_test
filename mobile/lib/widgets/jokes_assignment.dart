@@ -12,15 +12,15 @@ class JokesAssignment extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
-          'Jokes assignment',
-          textAlign: TextAlign.center,
-          softWrap: true,
-          style: TextStyle(
-            fontSize: MediaQuery.sizeOf(context).width * 0.055,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+        // Text(
+        //   'Jokes assignment',
+        //   textAlign: TextAlign.center,
+        //   softWrap: true,
+        //   style: TextStyle(
+        //     fontSize: MediaQuery.sizeOf(context).width * 0.055,
+        //     fontWeight: FontWeight.bold,
+        //   ),
+        // ),
         const SpaceByPercent(percentHeight: 0.01),
 
         // solve jokes assignment
